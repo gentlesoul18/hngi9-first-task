@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     #local app
     "first_task",
 ]
-
+CORS_ALLOW_HEADERS = ['*']
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
@@ -94,7 +94,7 @@ DATABASES = {
 
 
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_HEADERS = ['*']
+
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
