@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-f!qk)8pwndjpm*)eft$0_lvt@bxiium893!_87$=rpb!wigzi_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','gentlesoul.herokuapp.com']
+ALLOWED_HOSTS = ['*','0.0.0.0','127.0.0.1','gentlesoul.herokuapp.com']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     #Third party app
     "rest_framework",
+    "corsheader",
 
     #local app
     "first_task",
@@ -55,6 +56,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    "corsheaders.middeleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = "hngi9.urls"
