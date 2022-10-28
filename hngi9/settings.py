@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 
     #Third party app
     "rest_framework",
-    "corsheader",
+    "corsheaders",
 
     #local app
     "first_task",
